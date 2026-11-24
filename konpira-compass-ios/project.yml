@@ -1,0 +1,26 @@
+name: KonpiraCompass
+options:
+  bundleIdPrefix: com.yumu19
+  deploymentTarget:
+    iOS: "16.0"
+targets:
+  KonpiraCompass:
+    type: application
+    platform: iOS
+    sources:
+      - KonpiraCompass
+    info:
+      path: KonpiraCompass/Info.plist
+      properties:
+        CFBundleDisplayName: 金比羅コンパス
+        NSLocationWhenInUseUsageDescription: 現在地から安井金比羅宮の方角と距離を表示するために位置情報を使用します。
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.yumu19.konpiracompass
+        MARKETING_VERSION: "1.0"
+        CURRENT_PROJECT_VERSION: "1"
+        SWIFT_VERSION: "5.0"
+        TARGETED_DEVICE_FAMILY: "1"
